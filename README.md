@@ -1,14 +1,6 @@
 # Integer Programming for Optimal Right Hand Guitar Fingerings
 This repository is useful for generating the LP file to be used with Gurobi Optimizer for determining optimal right hand guitar fingerings. 
 
----
-layout: default
-title: "Integer Programming for Optimal Right Hand Guitar Fingerings"
-tags: projects
----
-
-## Integer Programming for Optimal Right Hand Guitar Fingerings
-
 The Western canon of European classical music includes a substantial amount of scale-based, fingerstyle guitar music. When presented with a piece of sheet music, a classical guitarist must make a number of decisions regarding its performance. These decisions include notating the tablature, the left hand fingerings, and the right hand fingerings. This process, especially for right hand guitar fingerings, is often a trivial, yet cumbersome task. 
 
 For example, consider the [*III. Allegro Solemne* movement](https://youtu.be/dmc6KV0_UVM?t=273) from the 1921 piece "La Catedral" by Paraguayan composer Agustín Barrios. Due to its fast tempo, the performer must pay careful attention to the fingerings to adhere to proper technique while maintaining such a tempo. The problem then becomes how can we use math and computer science to determine optimal fingerings for this type of music?
@@ -59,8 +51,15 @@ We decided to formulate this problem as an integer program where each of these r
 
 An explanation of this model as well as other information about this project can be found in <a href="/assets/docs/RHFingerings.pdf">this paper.</a>
 
-We implemented the model with Gurobi Optimizer and tested it on some selected measures of "La Catedral". Below are some examples of the results. The f <sub>i</sub> correspond to the finger assignment of each note as returned by our model and the f <sub>i</sub>* correspond to the optimal finger assignment. 
+# Using this on your own music
 
-<img src="/assets/img/measure1.png" alt="drawing" width="200" style="float: center;"/> 
-<img src="/assets/img/measure2.png" alt="drawing" width="200" style="float: center;"/> 
-<img src="/assets/img/measure3.png" alt="drawing" width="160" style="float: center;"/> 
+If you would like to use this model to determine RH fingerings for your own music, simply download the Python rhfingerings.py file. At the beginning of the code, there is a dictionary *s*. This dictionary is where one would input the ordered sequence of strings to be played. Use the following notation for each string:
+
+e string: 1
+B string: 2
+G string: 3
+D string: 4
+A string: 5
+E string: 6
+
+Simply run the Python code and it will generate the .lp file that can then be used with Gurobi Optimizer to determine the optimal fingerings for your music. 
