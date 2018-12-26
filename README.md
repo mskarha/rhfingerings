@@ -55,11 +55,11 @@ An explanation of this model as well as other information about this project can
 
 If you would like to use this model to determine RH fingerings for your own music, simply download the Python rhfingerings.py file. At the beginning of the code, there is a dictionary *s*. This dictionary is where one would input the ordered sequence of strings to be played. Use the following notation for each string:
 
-e string: 1
-B string: 2
-G string: 3
-D string: 4
-A string: 5
-E string: 6
+- e string: 1
+- B string: 2
+- G string: 3
+- D string: 4
+- A string: 5
+- E string: 6
 
 Simply run the Python code and it will generate the .lp file that can then be used with Gurobi Optimizer to determine the optimal fingerings for your music. 
