@@ -1,6 +1,6 @@
 # Integer Programming for Optimal Right Hand Guitar Fingerings
-This repository is useful for generating the LP file to be used with Gurobi Optimizer for determining optimal right hand guitar fingerings. 
-
+By Matt Skarha, Isabel Taylor, and Mohit Dubey
+----------------------------------------------------------------------------------------------
 The Western canon of European classical music includes a substantial amount of scale-based, fingerstyle guitar music. When presented with a piece of sheet music, a classical guitarist must make a number of decisions regarding its performance. These decisions include notating the tablature, the left hand fingerings, and the right hand fingerings. This process, especially for right hand guitar fingerings, is often a trivial, yet cumbersome task. 
 
 For example, consider the [*III. Allegro Solemne* movement](https://youtu.be/dmc6KV0_UVM?t=273) from the 1921 piece "La Catedral" by Paraguayan composer Agustín Barrios. Due to its fast tempo, the performer must pay careful attention to the fingerings to adhere to proper technique while maintaining such a tempo. The problem then becomes how can we use math and computer science to determine optimal fingerings for this type of music?
