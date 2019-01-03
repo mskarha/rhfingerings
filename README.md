@@ -49,7 +49,7 @@ We decided to formulate this problem as an integer program where each of these r
 
 
 
-An explanation of this model as well as other information about this project can be found in <a href="mattskarha.com/assets/docs/RHFingerings.pdf">this paper.</a>
+An explanation of this model as well as other information about this project can be found in <a href="http://www.mattskarha.com/assets/docs/RHFingerings.pdf">this paper.</a>
 
 # Using this on your own music
 
